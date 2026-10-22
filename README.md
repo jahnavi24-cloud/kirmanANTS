@@ -62,6 +62,19 @@ and `custom_run.png` for your own parameters. Each shows `x(t)` on the left and 
 simulated histogram against the diffusion prediction (red) on the right.
 
 ## Reading the plots
+## Results
+
+**Strong herding (eps*N/h = 0.2): the colony flips between two states**
+
+![flipping](bimodal_flipping.png)
+
+**Critical point (eps*N/h = 1)**
+
+![critical](critical.png)
+
+**Noise-dominated (eps*N/h = 4): no herding, settles near 50/50**
+
+![noisy](unimodal_noisy.png)
 
 - In the bimodal regime the time series jumps between near 0 and near 1 and
   rarely rests at 0.5.
@@ -72,4 +85,4 @@ simulated histogram against the diffusion prediction (red) on the right.
 
 - `kirman_ants.py`: simulation, theory, plotting
 - `requirements.txt`: numpy, matplotlib
-- `figures/`: example output
+- `*.png`: example output
